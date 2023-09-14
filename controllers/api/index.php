@@ -9,7 +9,6 @@ $db = new Database($config['database']);
 $getdb = $db->getDb();
 $request = $_SERVER['REQUEST_METHOD'];
 $person = new PersonController($getdb);
-// $user_id = isset($_GET['user_id']) ?? die();
 
 if (isset($_GET['user_id'])) {
     $user_id = $_GET['user_id'];
